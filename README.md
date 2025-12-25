@@ -2,7 +2,7 @@
 
 This project is a robust **.NET 9 Web API** application designed to demonstrate a clean **Layered Architecture** (N-Tier). It implements essential modern API features including **Entity Framework Core** with SQLite, **JWT Authentication**, **AutoMapper**, **Global Error Handling**, and **Repository Pattern**.
 
-## 🏗️ Architecture Diagram
+## Architecture Diagram
 
 The application follows a strict separation of concerns:
 
@@ -26,14 +26,14 @@ graph TD
 - **Service**: Contains business logic, AutoMapper profiles, and Service implementations.
 - **API**: The entry point (Controllers & Minimal APIs), DI configuration, and Middleware.
 
-## 🌱 Seed Data (Auto-Generated)
+## Seed Data (Auto-Generated)
 The application automatically creates the following data on startup if the database is empty:
 - **User**: username: `seed_user`, password: `12345` (Role: Admin)
 - **Collections**: Elektronik, Kitap
 - **Merchandises**: Laptop, Telefon, Roman
 - **Purchases**: One sample purchase for `seed_user` containing a Laptop.
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. **Prerequisites**: Ensure you have [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) installed.
 2. **Clone**: Clone this repository.
@@ -48,15 +48,15 @@ The application automatically creates the following data on startup if the datab
    - The application will automatically create the SQLite database (`app.db`) on startup.
 5. **Explore**: Open your browser to the Swagger URL shown in the console (typically `http://localhost:5259/swagger`).
 
-## 📡 Endpoints
+## Endpoints
 
-### 🔐 Authentication
+### Authentication
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
 | `POST` | `/api/Auth/register` | Register a new user (Default Role: Admin) |
 | `POST` | `/api/Auth/login` | Login to receive a JWT Bearer Token |
 
-### 📦 Merchandises (Controllers)
+### Merchandises (Controllers)
 *Requires Authorization*
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -66,7 +66,7 @@ The application automatically creates the following data on startup if the datab
 | `PUT` | `/api/Merchandises/{id}` | Update a merchandise |
 | `DELETE` | `/api/Merchandises/{id}` | Soft delete a merchandise |
 
-### 🛒 Purchases (Business Logic)
+### Purchases (Business Logic)
 *Requires Authorization*
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
@@ -74,13 +74,13 @@ The application automatically creates the following data on startup if the datab
 | `GET` | `/api/Purchases` | List all purchases with deep details (Items & User) |
 | `GET` | `/api/Purchases/{id}` | Get specific purchase details |
 
-### 📂 Collections (Minimal API)
+### Collections (Minimal API)
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
 | `GET` | `/api/collections` | List all collections |
 | `POST` | `/api/collections` | Create a collection |
 
-## 📝 API Response Examples
+## API Response Examples
 
 All API responses follow a standard wrapper format:
 

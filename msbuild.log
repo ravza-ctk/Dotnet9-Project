@@ -1,0 +1,99 @@
+Oluşturma başlatıldı: 25.12.2025 10:00:37.
+Günlük kaydı ayrıntı düzeyi Normal olarak ayarlandı.     1>1 düğümünde "C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj" projesi (Restore hedef).
+     1>_GetAllRestoreProjectPathItems:
+         Geri yüklenecek projeler belirleniyor...
+       Restore:
+         X.509 sertifika zinciri doğrulaması, kod imzalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+         X.509 sertifika zinciri doğrulaması, zaman damgalama için .NET tarafından seçilen varsayılan güven deposunu kullanır.
+         Varlıklar dosyası değiştirilmedi. Varlıklar dosyasına yazma işlemi atlanıyor. Yol: C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\obj\project.assets.json
+         Varlıklar dosyası değiştirilmedi. Varlıklar dosyasına yazma işlemi atlanıyor. Yol: C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\project.assets.json
+         Varlıklar dosyası değiştirilmedi. Varlıklar dosyasına yazma işlemi atlanıyor. Yol: C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\obj\project.assets.json
+         Varlıklar dosyası değiştirilmedi. Varlıklar dosyasına yazma işlemi atlanıyor. Yol: C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\obj\project.assets.json
+         C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj geri yüklendi (46 ms içinde).
+         C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\WebApplication1.Core.csproj geri yüklendi (46 ms içinde).
+         C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj geri yüklendi (46 ms içinde).
+         C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\WebApplication1.Data.csproj geri yüklendi (46 ms içinde).
+         
+         Kullanılan NuGet yapılandırma dosyaları:
+             C:\Users\VICTUS\AppData\Roaming\NuGet\NuGet.Config
+         
+         Kullanılan akışlar:
+             https://api.nuget.org/v3/index.json
+         Geri yükleme için tüm projeler güncel.
+     1>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj" Projesini Oluşturma İşlemi Tamamlandı (Restore hedef).
+   1:7>3 düğümünde "C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj" projesi (varsayılan hedefler).
+   1:7>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj" projesi (1:7) 1 düğümünde "C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\WebApplication1.Core.csproj" (4:8) oluşturuyor (varsayılan hedefler).
+     4>GenerateTargetFrameworkMonikerAttribute:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateTargetFrameworkMonikerAttribute" hedefi atlanıyor.
+       CoreGenerateAssemblyInfo:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreGenerateAssemblyInfo" hedefi atlanıyor.
+       _GenerateSourceLinkFile:
+         Source Link boş, 'obj\Debug\net9.0\WebApplication1.Core.sourcelink.json' dosyası yok.
+       CoreCompile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreCompile" hedefi atlanıyor.
+       GenerateBuildDependencyFile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateBuildDependencyFile" hedefi atlanıyor.
+       CopyFilesToOutputDirectory:
+         WebApplication1.Core -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\bin\Debug\net9.0\WebApplication1.Core.dll
+     4>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\WebApplication1.Core.csproj" Projesini Oluşturma İşlemi Tamamlandı (varsayılan hedefler).
+   1:7>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj" projesi (1:7) 3 düğümünde "C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\WebApplication1.Data.csproj" (3:7) oluşturuyor (varsayılan hedefler).
+     3>GenerateTargetFrameworkMonikerAttribute:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateTargetFrameworkMonikerAttribute" hedefi atlanıyor.
+       CoreGenerateAssemblyInfo:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreGenerateAssemblyInfo" hedefi atlanıyor.
+       _GenerateSourceLinkFile:
+         Source Link boş, 'obj\Debug\net9.0\WebApplication1.Data.sourcelink.json' dosyası yok.
+       CoreCompile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreCompile" hedefi atlanıyor.
+       GenerateBuildDependencyFile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateBuildDependencyFile" hedefi atlanıyor.
+       CopyFilesToOutputDirectory:
+         WebApplication1.Data -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\bin\Debug\net9.0\WebApplication1.Data.dll
+     3>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\WebApplication1.Data.csproj" Projesini Oluşturma İşlemi Tamamlandı (varsayılan hedefler).
+   1:7>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj" projesi (1:7) 2 düğümünde "C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj" (2:6) oluşturuyor (varsayılan hedefler).
+     2>GenerateTargetFrameworkMonikerAttribute:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateTargetFrameworkMonikerAttribute" hedefi atlanıyor.
+       CoreGenerateAssemblyInfo:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreGenerateAssemblyInfo" hedefi atlanıyor.
+       _GenerateSourceLinkFile:
+         Source Link boş, 'obj\Debug\net9.0\WebApplication1.Service.sourcelink.json' dosyası yok.
+       CoreCompile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreCompile" hedefi atlanıyor.
+       GenerateBuildDependencyFile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateBuildDependencyFile" hedefi atlanıyor.
+       CopyFilesToOutputDirectory:
+         WebApplication1.Service -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Service.dll
+     2>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj" Projesini Oluşturma İşlemi Tamamlandı (varsayılan hedefler).
+     1>GenerateTargetFrameworkMonikerAttribute:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateTargetFrameworkMonikerAttribute" hedefi atlanıyor.
+       CoreGenerateAssemblyInfo:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreGenerateAssemblyInfo" hedefi atlanıyor.
+       _DiscoverMvcApplicationParts:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "_DiscoverMvcApplicationParts" hedefi atlanıyor.
+       _GenerateSourceLinkFile:
+         Source Link boş, 'obj\Debug\net9.0\WebApplication1.sourcelink.json' dosyası yok.
+       CoreCompile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "CoreCompile" hedefi atlanıyor.
+       _CreateAppHost:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "_CreateAppHost" hedefi atlanıyor.
+       _ProcessScopedCssFiles:
+       Çıkış içermediğinden "_ProcessScopedCssFiles" hedefi atlanıyor.
+       _ProcessScopedCssFiles:
+       Çıkış içermediğinden "_ProcessScopedCssFiles" hedefi atlanıyor.
+       _BuildCopyStaticWebAssetsPreserveNewest:
+       Çıkış içermediğinden "_BuildCopyStaticWebAssetsPreserveNewest" hedefi atlanıyor.
+       _CopyOutOfDateSourceItemsToOutputDirectory:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "_CopyOutOfDateSourceItemsToOutputDirectory" hedefi atlanıyor.
+       GenerateBuildDependencyFile:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateBuildDependencyFile" hedefi atlanıyor.
+       GenerateBuildRuntimeConfigurationFiles:
+       Tüm çıkış dosyaları, giriş dosyalarına göre güncel durumda olduğundan "GenerateBuildRuntimeConfigurationFiles" hedefi atlanıyor.
+       CopyFilesToOutputDirectory:
+         WebApplication1 -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\bin\Debug\net9.0\WebApplication1.dll
+     1>"C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj" Projesini Oluşturma İşlemi Tamamlandı (varsayılan hedefler).
+
+Oluşturma başarılı oldu.
+    0 Uyarı
+    0 Hata
+
+Geçen Süre 00:00:01.11

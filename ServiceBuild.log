@@ -1,0 +1,8 @@
+  Geri yüklenecek projeler belirleniyor...
+  Geri yükleme için tüm projeler güncel.
+  WebApplication1.Core -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\bin\Debug\net9.0\WebApplication1.Core.dll
+  WebApplication1.Data -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\bin\Debug\net9.0\WebApplication1.Data.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Mappings\MapProfile.cs(32,19): warning CS8618: Null atanamaz özellik 'Name', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun. [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(18,22): error CS0122: 'GenericService<Product, ProductDto>._mapper' öğesine koruma düzeyi nedeniyle erişilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(19,15): error CS0122: 'GenericService<Product, ProductDto>._repository' öğesine koruma düzeyi nedeniyle erişilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(20,26): error CS0122: 'GenericService<Product, ProductDto>._mapper' öğesine koruma düzeyi nedeniyle erişilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]

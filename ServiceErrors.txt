@@ -1,0 +1,19 @@
+  Geri y??klenecek projeler belirleniyor...
+  Geri y??kleme i??in t??m projeler g??ncel.
+  WebApplication1.Core -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\bin\Debug\net9.0\WebApplication1.Core.dll
+  WebApplication1.Data -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\bin\Debug\net9.0\WebApplication1.Data.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Mappings\MapProfile.cs(32,19): warning CS8618: Null atanamaz ??zellik 'Name', olu??turucudan ????k???? yaparken null olmayan bir de??er i??ermelidir. 'Gerekli' de??i??tiricisini ekleyin veya ??zellik de??erini null atanabilir olarak bildirmeyi g??z ??n??nde bulundurun. [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(18,22): error CS0122: 'GenericService<Product, ProductDto>._mapper' ????esine koruma d??zeyi nedeniyle eri??ilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(19,15): error CS0122: 'GenericService<Product, ProductDto>._repository' ????esine koruma d??zeyi nedeniyle eri??ilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(20,26): error CS0122: 'GenericService<Product, ProductDto>._mapper' ????esine koruma d??zeyi nedeniyle eri??ilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+
+Olu??turma BA??ARISIZ OLDU.
+
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Mappings\MapProfile.cs(32,19): warning CS8618: Null atanamaz ??zellik 'Name', olu??turucudan ????k???? yaparken null olmayan bir de??er i??ermelidir. 'Gerekli' de??i??tiricisini ekleyin veya ??zellik de??erini null atanabilir olarak bildirmeyi g??z ??n??nde bulundurun. [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(18,22): error CS0122: 'GenericService<Product, ProductDto>._mapper' ????esine koruma d??zeyi nedeniyle eri??ilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(19,15): error CS0122: 'GenericService<Product, ProductDto>._repository' ????esine koruma d??zeyi nedeniyle eri??ilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\Services\ProductService.cs(20,26): error CS0122: 'GenericService<Product, ProductDto>._mapper' ????esine koruma d??zeyi nedeniyle eri??ilemiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\WebApplication1.Service.csproj]
+    1 Uyar??
+    3 Hata
+
+Ge??en S??re 00:00:01.02

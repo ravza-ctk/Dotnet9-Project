@@ -1,0 +1,16 @@
+  Geri y??klenecek projeler belirleniyor...
+  Geri y??kleme i??in t??m projeler g??ncel.
+  WebApplication1.Core -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\bin\Debug\net9.0\WebApplication1.Core.dll
+  WebApplication1.Data -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\bin\Debug\net9.0\WebApplication1.Data.dll
+  WebApplication1.Service -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Service.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\Program.cs(27,35): error CS0117: 'SecuritySchemeType' bir 'ApiModel' tan??m?? i??ermiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\Program.cs(54,18): error CS0121: ??a??r?? ??u y??ntem veya ??zellikler aras??nda belirsiz: 'Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddAutoMapper(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<AutoMapper.IMapperConfigurationExpression>)' ve 'Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddAutoMapper(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<AutoMapper.IMapperConfigurationExpression>)' [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj]
+
+Olu??turma BA??ARISIZ OLDU.
+
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\Program.cs(27,35): error CS0117: 'SecuritySchemeType' bir 'ApiModel' tan??m?? i??ermiyor [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj]
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\Program.cs(54,18): error CS0121: ??a??r?? ??u y??ntem veya ??zellikler aras??nda belirsiz: 'Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddAutoMapper(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<AutoMapper.IMapperConfigurationExpression>)' ve 'Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions.AddAutoMapper(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<AutoMapper.IMapperConfigurationExpression>)' [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj]
+    0 Uyar??
+    2 Hata
+
+Ge??en S??re 00:00:07.43

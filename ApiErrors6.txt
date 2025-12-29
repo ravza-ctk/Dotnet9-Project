@@ -1,0 +1,14 @@
+  Geri y??klenecek projeler belirleniyor...
+  Geri y??kleme i??in t??m projeler g??ncel.
+  WebApplication1.Core -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Core\bin\Debug\net9.0\WebApplication1.Core.dll
+  WebApplication1.Data -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Data\bin\Debug\net9.0\WebApplication1.Data.dll
+  WebApplication1.Service -> C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Service.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\Program.cs(59,18): error CS1061: 'IServiceCollection' bir 'AddServiceLayer' tan??m?? i??ermiyor ve 'IServiceCollection' t??r??nde bir ilk ba????ms??z de??i??ken kabul eden hi??bir eri??ilebilir 'AddServiceLayer' geni??letme y??ntemi bulunamad?? (bir kullanma y??nergeniz veya derleme ba??vurunuz eksik olabilir mi?) [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj]
+
+Olu??turma BA??ARISIZ OLDU.
+
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\Program.cs(59,18): error CS1061: 'IServiceCollection' bir 'AddServiceLayer' tan??m?? i??ermiyor ve 'IServiceCollection' t??r??nde bir ilk ba????ms??z de??i??ken kabul eden hi??bir eri??ilebilir 'AddServiceLayer' geni??letme y??ntemi bulunamad?? (bir kullanma y??nergeniz veya derleme ba??vurunuz eksik olabilir mi?) [C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1\WebApplication1.csproj]
+    0 Uyar??
+    1 Hata
+
+Ge??en S??re 00:00:02.20

@@ -1,0 +1,17 @@
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Service.deps.json
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Service.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Service.pdb
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Core.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Data.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Core.pdb
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\bin\Debug\net9.0\WebApplication1.Data.pdb
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebApplication1.Service.csproj.AssemblyReference.cache
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebApplication1.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebApplication1.Service.AssemblyInfoInputs.cache
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebApplication1.Service.AssemblyInfo.cs
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebApplication1.Service.csproj.CoreCompileInputs.cache
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebAppli.04DA624C.Up2Date
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebApplication1.Service.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\refint\WebApplication1.Service.dll
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\WebApplication1.Service.pdb
+C:\Users\VICTUS\RiderProjects\WebApplication1\WebApplication1.Service\obj\Debug\net9.0\ref\WebApplication1.Service.dll

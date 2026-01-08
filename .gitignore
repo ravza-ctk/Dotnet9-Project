@@ -1,0 +1,7 @@
+*.log
+ApiErrors*.txt
+BuildErrors.txt
+ServiceErrors*.txt
+build_error_log.txt
+build_log.txt
+msbuild.log

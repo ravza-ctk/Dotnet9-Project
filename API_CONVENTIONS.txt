@@ -1,0 +1,27 @@
+API CONVENTIONS
+===============
+
+Naming Conventions
+------------------
+- URL Paths: Lowercase, plural nouns (kebab-case if needed).
+  Example: /api/merchandises, /api/users
+- Query Parameters: camelCase.
+  Example: ?pageNumber=1&pageSize=10
+- JSON Properties: camelCase.
+  Example: { "firstName": "John", "createdAt": "..." }
+
+Architecture
+------------
+- Layered: Core (Entities/Interfaces) -> Data (EF Core) -> Service (Business Logic) -> API (Controllers/Endpoints).
+- DTOs: Entities are never exposed directly. DTOs are used for all I/O.
+- Repository Pattern: Generic Repository used for standard CRUD.
+
+Endpoints
+---------
+- All endpoints are prefixed with `/api`.
+- Controller-based endpoints for Merchandises, Users.
+- Minimal API-based endpoints for Collections.
+
+Versioning
+----------
+- Current version: v1 (implied in path or header if strictly required, currently root /api).

@@ -1,0 +1,27 @@
+AUTHENTICATION & AUTHORIZATION
+==============================
+
+Type: JWT (JSON Web Token)
+
+Flow
+----
+1. User registers via POST /api/auth/register.
+2. User logs in via POST /api/auth/login to receive a Bearer Token.
+3. Token must be included in the Authorization header of subsequent requests:
+   `Authorization: Bearer <token>`
+
+Configuration
+-------------
+- Secret Key: Stored in `appsettings.json` (AppSettings:Token).
+- Token Expiry: Configurable.
+
+Roles
+-----
+- "Admin": Can perform destructive actions or create resources.
+- "User": Read-only or permitted to manage own data (like Purchases).
+
+Implementation
+--------------
+- Handler: `JwtBearerDefaults.AuthenticationScheme`
+- Service: `AuthService.cs` generates tokens.
+- Controllers: Decorated with `[Authorize]` or `[Authorize(Roles = "Admin")]`.

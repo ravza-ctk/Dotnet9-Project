@@ -1,128 +1,139 @@
-# WebApplication1 API - .NET 9
+# .NET 9 REST API Projesi
 
-This project is a robust **.NET 9 Web API** application designed to demonstrate a clean **Layered Architecture** (N-Tier). It implements essential modern API features including **Entity Framework Core** with SQLite, **JWT Authentication**, **AutoMapper**, **Global Error Handling**, and **Repository Pattern**.
+Bu proje, **.NET 9** kullanılarak geliştirilmiş, **Katmanlı Mimari (Layered Architecture)** prensiplerine uygun, **Minimal API** ve **Controller** yapılarının hibrit olarak kullanıldığı bir RESTful API uygulamasıdır. Veri erişimi için **Entity Framework Core** ve **SQLite** kullanılmıştır.
 
-## Architecture Diagram
+## 📋 Proje Açıklaması
 
-The application follows a strict separation of concerns:
+Bu API, e-ticaret benzeri basit bir domain üzerine kurgulanmıştır. Kullanıcılar (User), Satın Alımlar (Purchase), Ürünler (Merchandise) ve Koleksiyonlar (Collection) gibi temel varlıkları yönetir.
+
+### Öne Çıkan Özellikler & Gereksinim Karşılamaları
+- **.NET 9 & C# 13**: En güncel teknoloji yığını.
+- **Katmanlı Mimari**: `Core`, `Data`, `Service` ve `API (Web)` katmanları.
+- **RESTful Tasarım**: Standart HTTP metodları (GET, POST, PUT, DELETE) ve uygun statu kodları.
+- **Generic Repository & Unit of Work**: Kod tekrarını önleyen veri erişim kalıpları.
+- **Global Exception Handling**: Merkezi hata yönetimi.
+- **Standart API Cevapları**: Tüm çıkışlar `{ success, message, data }` formatındadır.
+- **JWT Authentication**: Güvenli kimlik doğrulama.
+- **Data Seeding**: Uygulama ayağa kalkarken otomatik veri basma.
+- **Soft Delete**: Verilerin fiziksel olarak silinmeyip `IsDeleted` flag'i ile işaretlenmesi.
+- **Swagger / OpenAPI**: Otomatik dokümantasyon.
+
+## 🏗 Mimari Diagram
+
+Proje bağımlılıkları ve veri akışı aşağıdaki gibidir:
 
 ```mermaid
 graph TD
-    Client["Client (Swagger/Postman)"] -->|HTTP Requests| API["API Layer"]
-    subgraph "Application Core"
-        API -->|DTOs| Service["Service Layer"]
-        Service -->|Entities| Data["Data Layer"]
-        Data -->|SQL| Database[("SQLite Database")]
-        
-        Service -.->|Implements| Core["Core Layer (Interfaces/Entities)"]
-        Data -.->|Implements| Core
-    end
-    
-    API --> Middleware["Exception Handling Middleware"]
+    Client[Client / Swagger] --> API[Web API Layer]
+    API --> Service[Service Layer]
+    API --> Core[Core Layer]
+    Service --> Data[Data Layer]
+    Service --> Core
+    Data --> Core
+    Data --> DB[(SQLite Database)]
 ```
 
-- **Core**: Contains domain entities, DTOs, interfaces, and shared models. It has no dependencies on other layers.
-- **Data**: Implements EF Core configuration, DbContext, and Repositories.
-- **Service**: Contains business logic, AutoMapper profiles, and Service implementations.
-- **API**: The entry point (Controllers & Minimal APIs), DI configuration, and Middleware.
+## 🚀 Endpoint Listesi
 
-## Seed Data (Auto-Generated)
-The application automatically creates the following data on startup if the database is empty:
-- **User**: username: `seed_user`, password: `12345` (Role: Admin)
-- **Collections**: Elektronik, Kitap
-- **Merchandises**: Laptop, Telefon, Roman
-- **Purchases**: One sample purchase for `seed_user` containing a Laptop.
+> **Not**: Tüm endpointler `/api` prefix'i ile başlar. Detaylı dökümantasyon için projeyi çalıştırıp `/swagger` adresine gidiniz.
 
-## Setup Instructions
+### Auth (Kimlik Doğrulama)
+- `POST /api/auth/register` - Yeni kullanıcı kaydı.
+- `POST /api/auth/login` - Giriş yap ve JWT token al.
 
-1. **Prerequisites**: Ensure you have [.NET 9 SDK](https://dotnet.microsoft.com/download/dotnet/9.0) installed.
-2. **Clone**: Clone this repository.
-3. **Build**:
-   ```bash
-   dotnet build
-   ```
-4. **Run**:
-   ```bash
-   dotnet run --project WebApplication1
-   ```
-   - The application will automatically create the SQLite database (`app.db`) on startup.
-5. **Explore**: Open your browser to the Swagger URL shown in the console (typically `http://localhost:5259/swagger`).
+### Merchandises (Ürünler - Controller Based)
+- `GET /api/merchandises` - Tüm ürünleri getir.
+- `GET /api/merchandises/{id}` - ID'ye göre ürün getir.
+- `POST /api/merchandises` - Yeni ürün ekle (Admin Rolü Gerekir).
+- `PUT /api/merchandises/{id}` - Ürünü güncelle.
+- `DELETE /api/merchandises/{id}` - Ürünü (soft) sil.
 
-## Endpoints
+### Collections (Koleksiyonlar - Minimal API)
+- `GET /api/collections` - Koleksiyon listesi.
+- `GET /api/collections/{id}` - Detay.
+- `POST /api/collections` - Yeni koleksiyon.
+- `PUT /api/collections/{id}` - Güncelleme.
+- `DELETE /api/collections/{id}` - Silme.
 
-### Authentication
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `POST` | `/api/Auth/register` | Register a new user (Default Role: Admin) |
-| `POST` | `/api/Auth/login` | Login to receive a JWT Bearer Token |
+### Purchases (Satın Alımlar)
+- `GET /api/purchases` - Kullanıcının siparişleri.
+- `POST /api/purchases` - Sipariş oluştur.
 
-### Merchandises (Controllers)
-*Requires Authorization*
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/api/Merchandises` | List all merchandises |
-| `GET` | `/api/Merchandises/{id}` | Get specific merchandise details |
-| `POST` | `/api/Merchandises` | Create a new merchandise |
-| `PUT` | `/api/Merchandises/{id}` | Update a merchandise |
-| `DELETE` | `/api/Merchandises/{id}` | Soft delete a merchandise |
+## 📦 API Response Örnekleri
 
-### Purchases (Business Logic)
-*Requires Authorization*
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `POST` | `/api/Purchases` | Create a new purchase (Calculates TotalAmount automatically) |
-| `GET` | `/api/Purchases` | List all purchases with deep details (Items & User) |
-| `GET` | `/api/Purchases/{id}` | Get specific purchase details |
+Başarılı veya hatalı tüm istekler standart bir format döner.
 
-### Collections (Minimal API)
-| Method | Endpoint | Description |
-| :--- | :--- | :--- |
-| `GET` | `/api/collections` | List all collections |
-| `POST` | `/api/collections` | Create a collection |
-
-## API Response Examples
-
-All API responses follow a standard wrapper format:
-
-**Success Response (200 OK):**
+**Başarılı İstek (200 OK):**
 ```json
 {
   "success": true,
   "message": "",
   "data": {
     "id": 1,
-    "name": "Laptop",
-    "price": 15000,
-    "stock": 50
+    "name": "Örnek Ürün",
+    "price": 150.00,
+    "collectionName": "Yaz Sezonu"
   }
 }
 ```
 
-**Error Response (404/500):**
+**Hatalı İstek (404 Not Found):**
 ```json
 {
   "success": false,
-  "message": "Merchandise not found",
+  "message": "Merchandise not found.",
   "data": null
 }
 ```
 
-**Purchase Response (with calculated details):**
+**Global Hata (500 Internal Server Error):**
 ```json
 {
-  "success": true,
-  "message": "Debug Log: ...",
-  "data": {
-    "id": 5,
-    "totalAmount": 30000,
-    "purchaseItems": [
-      {
-        "merchandiseName": "Laptop",
-        "quantity": 2,
-        "unitPrice": 15000
-      }
-    ]
-  }
+  "success": false,
+  "message": "Internal Server Error: [Exception Detayı]",
+  "data": null
 }
 ```
-projende log dosyaların .gitignore içerisinde değil ve dosya dizininde karmaşıklığa yol açıyor, onları .gitignore dosyasına ekleyerek tekrardan pushlar mısın?
+
+## 🛠 Kurulum Talimatları
+
+Projeyi yerel ortamınızda çalıştırmak için:
+
+1. **Repoyu Klonlayın:**
+   ```bash
+   git clone <repo-url>
+   cd WebApplication1
+   ```
+
+2. **Bağımlılıkları Yükleyin:**
+   ```bash
+   dotnet restore
+   ```
+
+3. **Veritabanını Oluşturun (Opsiyonel):**
+   Uygulama her başlangıçta (`Program.cs`) veritabanını otomatik oluşturacak ve Seed verilerini basacaktır. Manuel migration yapmak isterseniz:
+   ```bash
+   dotnet ef database update --project WebApplication1.Data --startup-project WebApplication1
+   ```
+
+4. **Projeyi Çalıştırın:**
+   ```bash
+   dotnet run --project WebApplication1
+   ```
+
+5. **Test Edin:**
+   Tarayıcınızda veya Postman'de şu adrese gidin:
+   `https://localhost:7153/swagger` (Port numarası `launchSettings.json`'a göre değişebilir)
+
+## 📌 Değerlendirme Kriterleri Kontrol Listesi
+- [x] .NET 9 Kullanımı
+- [x] Katmanlı Mimari (Core, Data, Service, Web)
+- [x] CRUD İşlemleri (Hem Minimal API hem Controller)
+- [x] Entity İlişkileri (One-to-Many)
+- [x] Standart Response Wrapper (`ServiceResponse<T>`)
+- [x] DTO Kullanımı (AutoMapper)
+- [x] Global Exception Handling
+- [x] Swagger UI Entegrasyonu
+- [x] **Bonus**: JWT Auth
+- [x] **Bonus**: Soft Delete (`IsDeleted`)
+- [x] **Bonus**: Seed Data

@@ -1,0 +1,31 @@
+API ERROR CODES & STATUSES
+==========================
+
+The API uses standard HTTP status codes to indicate the success or failure of a request.
+
+Success Codes
+-------------
+200 OK: The request was successful (e.g., data retrieved, updated, deleted).
+201 Created: New resource successfully created (POST).
+204 No Content: Successful request but no data to return.
+
+Client Error Codes
+------------------
+400 Bad Request: Invalid input data or validation failure.
+401 Unauthorized: Missing or invalid JWT token.
+403 Forbidden: Valid token but insufficient permissions (e.g., Admin role required).
+404 Not Found: The requested resource does not exist.
+409 Conflict: Resource conflict (e.g., duplicate unique field).
+
+Server Error Codes
+------------------
+500 Internal Server Error: Unhandled exception on the server.
+
+Response Format
+---------------
+All responses (success or error) follow this JSON structure:
+{
+  "success": boolean,
+  "message": string,
+  "data": object | null
+}

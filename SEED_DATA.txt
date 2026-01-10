@@ -1,0 +1,21 @@
+DATA SEEDING
+============
+
+Purpose
+-------
+To populate the database with initial data for testing and demonstration purposes immediately upon startup.
+
+Mechanism
+---------
+- File: `WebApplication1.Data/DataSeeder.cs` (if implemented) or logic in `Program.cs`.
+- Trigger: Runs during application startup (`app.Run()`).
+
+Seeded Entities
+---------------
+1. Users: Creates a default Admin user if none exists.
+2. Collections: Creates sample product collections (e.g., "Summer 2024").
+3. Merchandises: Adds sample products linked to collections.
+
+Usage
+-----
+Just run the application. No manual script execution is required.

@@ -1,0 +1,13 @@
+CHANGELOG
+=========
+
+v1.0.0 (2026-01-10)
+-------------------
+- Initial release of .NET 9 REST API.
+- Implemented Layered Architecture (Core, Data, Service, API).
+- Added User, Merchandise, Collection, Purchase entities.
+- Implemented JWT Authentication.
+- Added Swagger documentation.
+- Implemented Soft Delete pattern.
+- Added Automatic Data Seeding.
+- Configured Global Exception Handling.

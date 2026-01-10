@@ -1,0 +1,21 @@
+LOGGING STRATEGY
+================
+
+Overview
+--------
+The application uses the built-in .NET Core ILogger abstraction. 
+Logs are currently written to the Console (Standard Output) which is suitable for containerized environments (Docker/Kubernetes).
+
+Configuration
+-------------
+Defined in `appsettings.json` under "Logging" section.
+
+Levels
+------
+- Information: Standard request logs, startup info.
+- Warning: Non-critical issues (e.g., bad login attempts).
+- Error: Exceptions caught by Global Exception Handler (500 errors).
+
+Future Extension
+----------------
+To persist logs to a file or external system (ELK, Seq), a sink like Serilog can be easily added without changing the code logic, thanks to ILogger.

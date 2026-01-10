@@ -1,0 +1,24 @@
+SOFT DELETE IMPLEMENTATION
+==========================
+
+Concept
+-------
+Records are never physically removed from the database `DELETE` statement. 
+Instead, they are marked as deleted to preserve history and maintain referential integrity.
+
+Mechanism
+---------
+1. Field: Every entity inherits from `BaseEntity` which includes:
+   `public bool IsDeleted { get; set; }`
+
+2. Delete Operation:
+   The `GenericRepository.DeleteAsync` method sets `IsDeleted = true` and updates the entity instead of removing it.
+
+3. Query Filter (Global):
+   `AppDbContext.OnModelCreating` configures a global Query Filter:
+   `builder.Entity<T>().HasQueryFilter(x => !x.IsDeleted);`
+   
+   This ensures that "deleted" records are automatically excluded from all LINQ queries (Get, GetAll) without needing to manually add `.Where(x => !x.IsDeleted)` every time.
+
+4. Restore:
+   To restore a record, direct DB access or a specific 'Restore' endpoint (not currently publicly exposed) would set `IsDeleted = false`.

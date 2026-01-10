@@ -125,3 +125,4 @@ All API responses follow a standard wrapper format:
   }
 }
 ```
+projende log dosyaların .gitignore içerisinde değil ve dosya dizininde karmaşıklığa yol açıyor, onları .gitignore dosyasına ekleyerek tekrardan pushlar mısın?
